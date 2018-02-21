@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Module-3-js</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const keyboard = [["q","w","e","r","t","y","u","i","o","p","[","]","\\"],
+      ["a","s","d","f","g","h","j","k","l",";","\'"],
+      ["z","x","c","v","b","n","m",",",".","/"]];
+
+      let hello = "hello";
+      let javascript = "javascript";
+      let trainer = "trainer";
+
+      let word = '';
+      let index = -1;
+
+      for (const value of hello) {
+        for (let i = 0; i < keyboard.length; i++){
+          for (let j = 0; j < keyboard[i].length; j++){
+            if (value === keyboard[i][j]){
+              word = word + keyboard[i][j];
+              // console.log(word);
+            }
+          }
+        }
+      }
+      console.log(word);
+
+      if (word == "hello"){
+        word = "";
+        for (const value of javascript) {
+          for (let i = 0; i < keyboard.length; i++){
+            for (let j = 0; j < keyboard[i].length; j++){
+              if (value === keyboard[i][j]){
+                word = word + keyboard[i][j];
+                // console.log(word);
+              }
+            }
+          }
+        }
+        console.log(word);
+      }
+      if (word === "javascript"){
+        word = "";
+        for (const value of trainer) {
+          for (let i = 0; i < keyboard.length; i++){
+            for (let j = 0; j < keyboard[i].length; j++){
+              if (value === keyboard[i][j]){
+                word = word + keyboard[i][j];
+                // console.log(word);
+              }
+            }
+          }
+        }
+        console.log(word);
+      }
+
+    </script>
+  </body>
+</html>
